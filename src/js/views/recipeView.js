@@ -5,7 +5,8 @@ import icons from 'url:../../img/icons.svg';
 
 // IMPORTING THIRD PARTY PACKAGES
 // package to convert decimal numbers to fractions
-import { Fraction } from 'fractional';
+// import { Fraction } from 'fractional';
+import { numberToFraction } from '../helpers.js';
 
 // IMPORTING LOCAL JS MODULES
 import View from './view.js';
@@ -163,7 +164,7 @@ class RecipeView extends View {
             <use href="${icons}#icon-check"></use>
           </svg>
           <div class="recipe__quantity">${
-            ing.quantity ? new Fraction(ing.quantity).toString() : ''
+            ing.quantity ? numberToFraction(ing.quantity).toString() : ''
           }</div>
           <div class="recipe__description">
             <span class="recipe__unit">${ing.unit}</span>
