@@ -1,0 +1,7 @@
+# inside of this file, we can put all the folders and also files, which we want Git to ignore, or in other words, folders and files that we do not want to get into our repository. And node_modules is a perfect example of that. Because, well, we can always get this code back from NPM
+# the same is true for our dist folder. So the dist folder, essentially only contains code that was built from our source code. And so again, this is actually code that we do not need in our Git repository
+# So usually, in the github repository, we only want like the original source code, and everything that is necessary in order to basically compile our final project later
+
+node_modules
+dist
+.parcel-cache
