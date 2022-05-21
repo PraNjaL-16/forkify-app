@@ -70,8 +70,8 @@ export const sendJSON = async function (url, uploadData) {
 export const AJAX = async function (url, uploadData = undefined) {
   try {
     // making API call to send data to the server or to retrive data from the server using fetch() method. So, fetch() method can be used for both recieving data from server or sending data to the sever.
-    // to send data to the server -> fetch(url, obj)
-    // to retrive data from server -> fetch(url)
+    // to send data to the server (POST request) -> fetch(url, obj)
+    // to retrive data from server (GET request) -> fetch(url)
     const fetchPro = uploadData
       ? fetch(url, {
           method: 'POST',
