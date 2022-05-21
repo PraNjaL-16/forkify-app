@@ -1,4 +1,5 @@
-# forkify project
+# Forkify project
 
-- Recipe application with custom recipe uploads.
-- Project created using `HTML` `CSS` `JavaScript`
+- Recipe application with custom recipe uploads
+- Built using `HTML` `CSS` `JavaScript`
+- Deployed on netlify
